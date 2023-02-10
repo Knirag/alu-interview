@@ -3,12 +3,11 @@
 
 def minOperations(n):
     """Variables Declared"""
-    k = 0
-    b = 2
-while n > 1:
-    while n % b == 0:
-    k += b
-    n /= b
-b +=1
+ if n<=1:
+    return 0
 
-return k
+for k in range(2,int((n/2)+1)):
+    id n % k ==0:
+   return minOperations(int(n/i)) + k
+
+return n
